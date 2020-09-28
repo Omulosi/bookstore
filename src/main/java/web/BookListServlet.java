@@ -22,7 +22,9 @@ public class BookListServlet extends HttpServlet {
             throws ServletException, IOException {
         List<Book> books = bookRepo.listBooks();
         request.setAttribute("books", books);
+        log("BookServelet: sample log message");
         request.getServletContext().getRequestDispatcher("/book-list.jsp")
                 .forward(request, response);
     }
+
 }
