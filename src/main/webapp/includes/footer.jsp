@@ -1,19 +1,14 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: jp
-  Date: 9/28/20
-  Time: 12:17 PM
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page import="java.util.GregorianCalendar" %>
-<%@ page import="java.util.Calendar" %>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<div id="footer">
+    <ul class="bottom">
+        <li><a href="#">HOME</a> |
+        <li><a href="#">CONTACT US</a> |
+        <li><a href="#">DOCUMENTATION</a> |
+        <li><a href="#">BLOG</a> |
+        <li><a href="#">WIKI</a>
 
-<div class="footer_section">
-    <%
-        GregorianCalendar date = new GregorianCalendar();
-        int yr = date.get(Calendar.YEAR);
-    %>
-    <p>&copy; Copyright <%= yr %></p>
+    </ul>
 
+    <div class="about">
+        Copyright (c) 2020 BookStore
+    </div>
 </div>
